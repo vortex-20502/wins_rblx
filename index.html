@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CELLULE HAY MOHAMADI</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: #080808;
+    text-align: center;
+}
+
+/* الخلفية */
+.page {
+    min-height: 100vh;
+    padding: 30px 15px;
+    background:
+      linear-gradient(#00000065, #00000085),
+      url("ae.png") center center / cover fixed;
+}
+
+/* العنوان */
+h1 {
+    color: #ff1717;
+    font-size: clamp(25px, 6vw, 38px);
+    font-weight: 900;
+    text-shadow: 0 0 15px red;
+    margin: 25px 0;
+    letter-spacing: 2px;
+}
+
+/* مكان الصورة الشخصية */
+.profile {
+    width: 190px;
+    height: 190px;
+    margin: 25px auto;
+    border: 3px solid #ff1717;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #ff000080;
+    overflow: hidden;
+    background: #171717;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subtitle {
+    color: #ddd;
+    margin: 15px 0 30px;
+    letter-spacing: 2px;
+}
+
+/* الأزرار */
+.main-btn {
+    display: inline-block;
+    background: #ed1010;
+    color: white;
+    padding: 14px 28px;
+    margin: 12px;
+    border: 1px solid #ff5555;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px #ff000050;
+    transition: .3s;
+}
+
+.main-btn:hover {
+    background: white;
+    color: red;
+    transform: scale(1.05);
+}
+
+/* الواجهة الثانية */
+.second-page {
+    min-height: 100vh;
+    padding: 40px 15px;
+    background:
+      linear-gradient(#050505d9, #050505eb),
+      url("ae.png") center / cover fixed;
+    border-top: 3px solid red;
+}
+
+h2 {
+    color: #ff2525;
+    font-size: 28px;
+    margin: 20px 0 10px;
+    text-shadow: 0 0 10px red;
+}
+
+.description {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* شبكة الصور الخمسة */
+.gallery {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.photo-button {
+    display: block;
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+    border: 2px solid #ff1717;
+    border-radius: 16px;
+    background: #151515;
+    box-shadow: 0 0 15px #ff000035;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.photo-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 22px #ff1717;
+}
+
+.photo-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-button span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 13px 5px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(transparent, #000000e8);
+}
+
+.photo-button:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 9px);
+    justify-self: center;
+}
+
+footer {
+    padding: 25px 10px;
+    color: #888;
+    font-size: 12px;
+}
+
+@media (max-width: 380px) {
+    .photo-button {
+        height: 145px;
+    }
+
+    .profile {
+        width: 160px;
+        height: 160px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- الواجهة الأولى -->
+<section class="page">
+
+    <h1>CELLULE<br>HAY MOHAMADI</h1>
+
+    <!-- ضع اسم صورتك هنا -->
+    <div class="profile">
+        <img src="po.png" alt="Ma photo"
+             onerror="this.style.display='none'">
+    </div>
+
+    <p class="subtitle">ultras winners roblox</p>
+
+    <a class="main-btn" href="#gallery">
+        DÉCOUVRIR
+    </a>
+
+</section>
+
+<!-- الواجهة الثانية -->
+<section class="second-page" id="gallery">
+
+    <h2>NOS ESPACES</h2>
+    <p class="description">Choisissez une image pour continuer</p>
+
+    <div class="gallery">
+
+        <!-- الصورة 1 -->
+        <a class="photo-button" href="https://play.google.com/store/apps/details?id=com.roblox.client"
+           target="_blank" rel="noopener">
+            <img src="ro.png" alt="Image 1"
+                 onerror="this.style.display='none'">
+            <span>ROBLOX </span>
+        </a>
+
+        <!-- الصورة 2 -->
+        <a class="photo-button" href="https://chat.whatsapp.com/DnD9FLilmYABK51vPlPgYm?s=cl&p=a&mlu=4&ilr=4"
+           target="_blank" rel="noopener">
+            <img src="wh.png" alt="Image 2"
+                 onerror="this.style.display='none'">
+            <span>GROUPE WHATSAPP H.M</span>
+        </a>
+
+        <!-- الصورة 3 -->
+        <a class="photo-button" href="https://www.roblox.com/share?code=8a69df41b3c9744fb4dcc9cba2aab84d&type=ExperienceDetails&stamp=1791918726539"
+           target="_blank" rel="noopener">
+            <img src="sd.png" alt="Image 3"
+                 onerror="this.style.display='none'">
+            <span>MAP HAY MOHAMMADI</span>
+        </a>
+
+        <!-- الصورة 4 -->
+        <a class="photo-button" href="https://www.instagram.com/channel/Abbk2F86l-pIn4jn/"
+           target="_blank" rel="noopener">
+            <img src="AP.png" alt="Image 4"
+                 onerror="this.style.display='none'">
+            <span>GROUPE INSTAGRAM WINS OFFICIAL</span>
+        </a>
+
+        <!-- الصورة 5 -->
+        <a class="photo-button" href="https://www.roblox.com/share?code=fdd4fd89515d8447a9bd4b1555ca13d9&type=ExperienceDetails&stamp=1791919330791"
+           target="_blank" rel="noopener">
+            <img src="dw.png" alt="Image 5"
+                 onerror="this.style.display='none'">
+            <span>MAP VAINQUEURS DU DERB</span>
+        </a>
+
+    </div>
+
+    <footer>
+        CELLULE HAY MOHAMADI © 2026
+    </footer>
+
+</section>
+
+</body>
+</html>
